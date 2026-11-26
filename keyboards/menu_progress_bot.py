@@ -18,9 +18,9 @@ from aiogram.types import (
 # ============================================================
 # НАСТРОЙКИ
 # ============================================================
-BOT_TOKEN = "9135190982:AAGvJ__n92CtdwoqpI4r-nVtBtMvgCiwLF4"
-admin = 256917133  # ← ID администратора (int)
-CARD_NUMBER = "2200 3961 0876 2879"
+BOT_TOKEN = config('BOT_TOKEN')
+admin = itn(config('ADMIN'))  # ← ID администратора (int)
+CARD_NUMBER = config('CARD_NUMBER')
 
 logging.basicConfig(level=logging.INFO)
 
